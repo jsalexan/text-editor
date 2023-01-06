@@ -20,8 +20,8 @@ export const putDb = async (content) => {
   const request = store.put({ id: id, value: content });
   const result = await request;
   console.log('🚀 - Data successfully saved to the database', result);
-  console.error('putDb not implemented');
-}
+  // console.error('putDb not implemented');
+};
 
 export const getDb = async () => {
   console.log('GET all from the JATE database');
@@ -32,6 +32,7 @@ export const getDb = async () => {
   const result = await request;
   console.log('result.value', result);
   return result; 
-  console.error('getDb not implemented');
-}
+  // console.error('getDb not implemented');
+};
+
 initdb();
